@@ -1,0 +1,39 @@
+Proyecto BD
+
+Ha sido contratado para crear un Sistema que controle diferentes tipos de asistencias brindadas por una empresa como outsourcing  para otras organizaciones.
+
+Una organización subcontrata servicios de asistencias como por ejemplo de plomería, asistencia en carretera, asistencia médica, etc etc.
+
+La empresa de asistencias cuenta con un call center que es el que recibe las llamadas de solicitud de servicios de asistencias, en el call center trabajan empleados que pueden hablar uno o mas idiomas.
+
+Se cuenta con muchos diferentes tipos de servicios y asistencias que son brindados por diferentes proveedores, estos proveedores tienen su propio precio, características y condiciones.
+
+La empresa de asistencia, tiene varios paquetes que incluyen diferentes asistencias, y se ofrecen a un precio mensual, su precio varía en la cantidad de asistencias que se brindan y el tipo de asistencias.
+
+La organización vende los servicios de asistencia a los clientes y estos clientes son referidos a la empresa de asistencia.
+
+Cuando un cliente llama a solicitar un servicio, se debe de validar todos los datos del cliente y de que organización proviene para poder determinar si puede hacer uso o no de los servicios.  En caso de que solicite un servicio que no está dentro de su paquete se puede brindar el servicio pero a un costo directo para el cliente, que puede pagar por transferencia, paypal o tarjeta de crédito/debito. 
+
+Si el servicio debe ser pagado por el cliente, se puede brindar solo cuando la transacción de pago se encuentre lista.
+
+Para cada servicio solicitado se debe almacenar todos los datos del cliente, ubicación, hora, tipo de servicio, cliente, costo, tiempo en brindar el servicio, empleado quien atiende la llamada, el proveedor del servicio y la calificación del servicio por parte del cliente una vez que el servicio se completa.
+
+Para brindar el servicio solicitado, el sistema debe de buscar, el proveedor que se encuentre disponible en la hora que se solicita, que brinde el servicio y que tenga una calificación mayor a 3 (0-5),tomando en cuenta que se debe buscar el proveedor que cumpla estas condiciones y que sea el más barato.
+
+A los clientes se les califica también por parte de los proveedores, un cliente que constantemente reciba calificaciones menores a 3 (de los últimos 5 servicios solicitados), se inactiva y no se le brinda servicio.
+
+Un proveedor que reciba calificaciones menores a 3 durante más de un mes se castiga y no se le darán servicios para atender durante 3 meses.
+
+El sistema debe poder consultar los diferentes servicios brindados por proveedores y sus calificaciones.
+
+La empresa ocupa poder determinar varios datos, por ejemplo cuales son las organizaciones que solicitan más servicios, cuáles son los servicios, los clientes.  Se debe poder determinar cuáles son los servicios que dejan más y menos ganancias, los mejores proveedores y los peores, los clientes que más solicitan y los que menos solicitan, los servicios más solicitados y los menos solicitados, todo esto entre rangos de fechas
+
+En todo momento se debe poder consultar cuales son los servicios en curso, el tiempo que se está demorando, cliente, etc.
+
+Tome en cuenta que para todas las tablas deben de hacerle el CRUD.
+
+Debe crear el modelo entidad-relación, relacional.
+
+Deben crear todos los procedimientos/funciones/triggers que sean necesarios para cumplir con todas las funcionalidades descritas para el sistema.
+
+Deben crear de entregar manual de usuario y técnico.
